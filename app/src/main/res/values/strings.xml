@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ZotFinder2.0</string>
+    <string name="access_token" translatable="false">pk.eyJ1IjoieWFsdGhhcWUiLCJhIjoiY2syNm9ubjRpMDA3ZTNjbXNsNWlwajUzZyJ9.2FA93bqcM4D3AINKQRAA0w</string>
+    <string name="initial_button">Start Navigation</string>
+    <string name="sat">Sat</string>
+
+    <string-array name="location_topics">
+        <item>A Classroom</item>
+        <item>A Building</item>
+        <item>A Room</item>
+    </string-array>
+
+    <string-array name="classroom_name">
+        <item>--Select a building--</item>
+        <item>BS3</item>
+        <item>EH</item>
+        <item>ELH</item>
+        <item>ICS</item>
+        <item>HH</item>
+        <item>ALP</item>
+    </string-array>
+</resources>
