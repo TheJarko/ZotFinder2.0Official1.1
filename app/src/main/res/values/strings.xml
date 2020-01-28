@@ -10,7 +10,7 @@
         <item>A Room</item>
     </string-array>
 
-    <string-array name="classroom_name">
+    <string-array name="building_name">
         <item>--Select a building--</item>
         <item>BS3</item>
         <item>EH</item>
@@ -18,5 +18,24 @@
         <item>ICS</item>
         <item>HH</item>
         <item>ALP</item>
+        <item>West Food Court</item>
+        <item>Java City Kiosk</item>
+        <item>ET</item>
+        <item>Calit2</item>
+        <item>DBH</item>
+        <item>Disability Services Center</item>
+        <item>MDEA</item>
+        <item>Rockwell Engineering Center</item>
+        <item>University Club</item>
+        <item>SSH</item>
+        <item>SSL</item>
+        <item>SSLH</item>
+        <item>SB1</item>
+        <item>SB2</item>
+        <item>SE</item>
+        <item>SE2</item>
+        <item>SSPA</item>
+        <item>SSPB</item>
+        <item>SST</item>
     </string-array>
 </resources>

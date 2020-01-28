@@ -80,18 +80,19 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"Anthill Pub & Grille", "33.648970", "-117.842303"},
             {"Pheonix Food Court", "33.645576", "-117.840749"},
             {"Student Health Center", "33.645560", "-117.836077"},
-            {"West Food Court", "33.649040", "-117.82491"}, //may need verification
+            {"West Food Court", "33.649125", "-117.842482"}, //may need verification
             {"Zot-N-Go", "33.648426", "-117.842691"},
 
             //Engineering + ICS
-            {"Calit2", "33.642873", "-117.841203"}, //Calit2 Building Structure
+            {"Calit2", "33.643203", "-117.841050"}, //Calit2 Building Structure
             {"DBH", "33.643433", "-117.842055"}, //Donald Bren Hall
             {"Disability Services Center", "33.644163", "-117.840341"},
             {"ECT", "33.643972", "-117.840190"}, //Engineering and Computing Trailer
             {"EH", "33.643854", "-117.841060"}, //Engineering Hall
             {"ELH", "33.644343", "-117.840686"}, //Engineering Lecture Hall
+            {"ET", "33.644619", "-117.841349"},
             {"ICS", "33.644396", "-117.841602"}, //Main ICS Building
-            {"Java City Kiosk", "33.643480", "-117.840901"},
+            {"Java City Kiosk", "33.643445", "-117.841162"},
             {"MDEA", "33.643830", "-117.840558"}, //McDonnel Douglas Engineering Auditorium
             {"Rockwell Engineering Center", "33.643945", "-117.840542"},
             {"University Club", "33.642927", "-117.842503"},
