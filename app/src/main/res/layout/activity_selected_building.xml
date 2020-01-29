@@ -40,7 +40,9 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="193dp"
         android:layout_marginEnd="30dp"
-        android:text="Find a building here. Could be a library, a food court, The Hill, any building that is NOT a classroom." />
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Find a building here." />
 
     <EditText
         android:id="@+id/editText2"
@@ -54,6 +56,7 @@
         android:layout_marginBottom="326dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/white"
         android:text="Enter the name of the building" />
 
     <Button

@@ -13,21 +13,23 @@
         android:layout_height="match_parent"
         mapbox:mapbox_cameraTargetLat="33.64599"
         mapbox:mapbox_cameraTargetLng="-117.84278"
-        mapbox:mapbox_cameraZoom="15" />
+        mapbox:mapbox_cameraZoom="15" >
 
-    <Button
-        android:id="@+id/Button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/mapboxBlue"
-        android:enabled="true"
-        android:text="@string/initial_button"
-        android:textColor="@color/mapboxWhite"
-        mapbox:layout_constraintStart_toStartOf="parent"
-        mapbox:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/mapboxBlue"
+            android:enabled="true"
+            android:text="@string/initial_button"
+            android:textColor="@color/mapboxWhite"
+
+            mapbox:layout_constraintStart_toStartOf="parent"
+            mapbox:layout_constraintTop_toTopOf="parent" />
+    </com.mapbox.mapboxsdk.maps.MapView>
 
     <Button
         android:id="@+id/changeMAP"

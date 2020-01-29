@@ -73,64 +73,88 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
     private String buildingSelection = selected_classroom.getData();
     private String[][] location_database = {
             //blank for copy and paste purposes (delete later)
-            {"", "33.", "-117."},
+            {"", "","33.", "-117."},
 
             //Misc.
-            {"ALP", "33.646974", "-117.844535"}, //ALP is between humanities and biologies
-            {"Anthill Pub & Grille", "33.648970", "-117.842303"},
-            {"Pheonix Food Court", "33.645576", "-117.840749"},
-            {"Student Health Center", "33.645560", "-117.836077"},
-            {"West Food Court", "33.649125", "-117.842482"}, //may need verification
-            {"Zot-N-Go", "33.648426", "-117.842691"},
+            {"Aldrich Hall", "","33.648432", "-117.841221"},
+            {"ALP", "", "33.646974", "-117.844535"}, //ALP is between humanities and biologies
+            {"Anthill Pub & Grille", "","33.648970", "-117.842303"},
+            {"E-sports Arena", "","33.648868", "-117.842531"},
+            {"Gateway Study Center", "","33.647492", "-117.841746"},
+            {"Jamba", "","33.648827", "-117.842069"},
+            {"Langson Library", "","33.647189", "-117.841138"},
+            {"Pheonix Food Court", "", "33.645576", "-117.840749"},
+            {"Starbucks (Student Center)", "","33.648453", "-117.842121"},
+            {"Student Health Center", "", "33.645560", "-117.836077"},
+            {"Student Services II", "","33.647986", "-117.842311"},
+            {"The Hill", "","33.648549", "-117.841802"}, //MIght need modifications
+            {"West Food Court", "", "33.649125", "-117.842482"}, //may need verification
+            {"Zot-N-Go", "", "33.648426", "-117.842691"},
 
             //Engineering + ICS
-            {"Calit2", "33.643203", "-117.841050"}, //Calit2 Building Structure
-            {"DBH", "33.643433", "-117.842055"}, //Donald Bren Hall
-            {"Disability Services Center", "33.644163", "-117.840341"},
-            {"ECT", "33.643972", "-117.840190"}, //Engineering and Computing Trailer
-            {"EH", "33.643854", "-117.841060"}, //Engineering Hall
-            {"ELH", "33.644343", "-117.840686"}, //Engineering Lecture Hall
-            {"ET", "33.644619", "-117.841349"},
-            {"ICS", "33.644396", "-117.841602"}, //Main ICS Building
-            {"Java City Kiosk", "33.643445", "-117.841162"},
-            {"MDEA", "33.643830", "-117.840558"}, //McDonnel Douglas Engineering Auditorium
-            {"Rockwell Engineering Center", "33.643945", "-117.840542"},
-            {"University Club", "33.642927", "-117.842503"},
+            {"Calit2", "", "33.643203", "-117.841050"}, //Calit2 Building Structure
+            {"DBH", "","33.643433", "-117.842055"}, //Donald Bren Hall
+            {"DSC", "", "33.644163", "-117.840341"}, //Disability Services Center
+            {"ECT", "", "33.643972", "-117.840190"}, //Engineering and Computing Trailer
+            {"EG", "","33.643067", "-117.840122"}, //Engineering Gateway
+            {"EH", "","33.643854", "-117.841060"}, //Engineering Hall
+            {"ELF", "","33.643844", "-117.839686"}, //Engineering Laboratory Facility
+            {"ELH", "", "33.644343", "-117.840686"}, //Engineering Lecture Hall
+            {"ET", "", "33.644619", "-117.841349"},  //Engineering Tower
+            {"ICS", "", "33.644396", "-117.841602"}, //Main ICS Building
+            {"ICF", "","33.644407", "-117.840010"}, //Interim Classroom Facility
+            {"Java City Kiosk", "", "33.643445", "-117.841162"},
+            {"MDEA", "", "33.643830", "-117.840558"}, //McDonnel Douglas Engineering Auditorium
+            {"REC", "", "33.643945", "-117.840542"}, //Rockwell Engineering Center
+            {"University Club", "", "33.642927", "-117.842503"},
 
             //Humanities + Arts
-            {"AITR", "33.649759", "-117.843953"}, //Arts Instruction and Technology Resource Center
-            {"HH", "33.647317", "-117.844024"}, //Humanities Hall
-            {"HIB", "33.648363", "-117.843919"}, //Humanities Instructional Building
-            {"KH", "33.647742", "-117.843600"}, //Krieger Hall
-            {"WSH", "33.649559", "-117.844387"}, //Winifred Smith Hall
+            {"AITR", "", "33.649759", "-117.843953"}, //Arts Instruction and Technology Resource Center
+            {"Claire Trevor Theater", "","33.649303", "-117.845215"},
+            {"HH", "", "33.647317", "-117.844024"}, //Humanities Hall
+            {"HIB", "", "33.648363", "-117.843919"}, //Humanities Instructional Building
+            {"KH", "", "33.647742", "-117.843600"}, //Krieger Hall
+            {"Nixon Theater", "","33.650238", "-117.844491"},
+            {"Sculpture & Ceramic Studios", "","33.650238", "-117.844491"},
+            {"WSH", "", "33.649559", "-117.844387"}, //Winifred Smith Hall
 
             //Biology
-            {"BS3", "33.645677", "-117.845646"}, //Biological Sciences Lecture Hall III
-            {"HSLH", "33.645613", "-117.844692"}, //Howard Schneiderman Lecture Hall
-            {"Science Library", "33.645818", "-117.846846"},
-            {"SH", "33.646272", "-117.845070"}, //Steinhaus Hall
+            {"Arts Computation Engineering", "","33.646467", "-117.846892"},
+            {"BC's Cavern Food Court", "","33.645911", "-117.844431"},
+            {"BS3", "", "33.645677", "-117.845646"}, //Biological Sciences Lecture Hall III
+            {"HSLH", "", "33.645613", "-117.844692"}, //Howard Schneiderman Lecture Hall
+            {"McGaugh Hall", "","33.645214", "-117.844811"},
+            {"NS1", "","33.644626", "-117.845432"}, //Natural Sciences I
+            {"NS2", "","33.644299", "-117.845163"},
+            {"Science Library", "", "33.645818", "-117.846846"},
+            {"SH", "", "33.646272", "-117.845070"}, //Steinhaus Hall
+            {"Starbucks (Biological Sciences III)", "","33.645022", "-117.845602"},
 
             //Social Sciences + Business
-            {"SB1", "33.646953", "-117.838121"}, //Merage School of Business I
-            {"SB2", "33.646673", "-117.838033"}, //Merage School of Business II
-            {"SE", "33.646277", "-117.838883"}, //Social Ecology I
-            {"SE2", "33.646650", "-117.838948"}, //Social Ecology II
-            {"SSH", "33.646256", "-117.840158"}, //Social Science Hall
-            {"SSL", "33.645978", "-117.840049"}, //Social Sciences Lab
-            {"SSLH", "33.647245", "-117.839700"}, //Social Science Lecture Hall
-            {"SSPA", "33.646996", "-117.839568"}, //Social Science Plaza A
-            {"SSPB", "33.646932", "-117.838976"}, //Social Science Plaza B
-            {"SST", "33.646500", "-117.840187"}, //Social Science Tower
+            {"MPAA", "","33.647546", "-117.837099"}, //Multipurpose Academic and Administrative Building
+            {"SB1", "", "33.646953", "-117.838121"}, //Merage School of Business I
+            {"SB2", "", "33.646673", "-117.838033"}, //Merage School of Business II
+            {"SE", "", "33.646277", "-117.838883"}, //Social Ecology I
+            {"SE2", "", "33.646650", "-117.838948"}, //Social Ecology II
+            {"SSH", "", "33.646256", "-117.840158"}, //Social Science Hall
+            {"SSL", "", "33.645978", "-117.840049"}, //Social Sciences Lab
+            {"SSLH", "", "33.647245", "-117.839700"}, //Social Science Lecture Hall
+            {"SSPA", "", "33.646996", "-117.839568"}, //Social Science Plaza A
+            {"SSPB", "", "33.646932", "-117.838976"}, //Social Science Plaza B
+            {"SST", "", "33.646500", "-117.840187"}, //Social Science Tower
+            {"SSTR", "","33.647018", "-117.840288"}, //Social Science Trailer
+            {"Starbucks (School of Business)", "","33.646968", "-117.838394"},
 
 
             //Physical Sciences
-            {"Cafe Expresso", "33.643938", "-117.843515"},
-            {"CRH", "33.643759", "-117.844739"}, //Croul Hall
-            {"FRH", "33.644152", "-117.843558"}, //Frederick Reines Hall
-            {"PCB", "33.644496", "-117.842746"}, //Parkview Classroom Building
-            {"PSLH", "33.643395", "-117.843973"}, //Physical Sciences Lecture Hall
-            {"PSCB", "33.643432", "-117.843537"}, //Physical Sciences Classroom Building
-            {"RH", "33.644513", "-117.844224"} //Rowland Hall
+            {"Cafe Expresso", "", "33.643938", "-117.843515"},
+            {"CRH", "", "33.643759", "-117.844739"}, //Croul Hall
+            {"FRH", "", "33.644152", "-117.843558"}, //Frederick Reines Hall
+            {"MSTB", "","33.642174", "-117.844381"}, //Multipurpose Science and Technology Building
+            {"PCB", "", "33.644496", "-117.842746"}, //Parkview Classroom Building
+            {"PSLH", "", "33.643395", "-117.843973"}, //Physical Sciences Lecture Hall
+            {"PSCB", "", "33.643432", "-117.843537"}, //Physical Sciences Classroom Building
+            {"RH", "", "33.644513", "-117.844224"} //Rowland Hall
 
 
     };
@@ -188,9 +212,9 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
                 ));
 
                 for (int i = 0; i < location_database.length; i++) {
-                    if (buildingSelection.equals(location_database[i][0])){
-                        inputlat = Double.parseDouble(location_database[i][1]);
-                        inputlong = Double.parseDouble(location_database[i][2]);
+                    if (buildingSelection.equals(location_database[i][0]) || (buildingSelection.equals(location_database[i][0]) && buildingSelection.equals(location_database[i][1]))){
+                        inputlat = Double.parseDouble(location_database[i][2]);
+                        inputlong = Double.parseDouble(location_database[i][3]);
                         break;
                     }
                 }
@@ -214,7 +238,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
 
 
 
-                button = findViewById(R.id.Button);
+                button = findViewById(R.id.StartButton);
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -225,6 +249,9 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
                                 .build();
                         // Call this method with Context from within an Activity
                         NavigationLauncher.startNavigation(Map.this, options);
+
+
+                        //provide an if statement if a user has reached destination here?
                     }
                 });
             }
