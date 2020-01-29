@@ -81,6 +81,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"Anthill Pub & Grille", "","33.648970", "-117.842303"},
             {"E-sports Arena", "","33.648868", "-117.842531"},
             {"Gateway Study Center", "","33.647492", "-117.841746"},
+            {"Greenhouse", "","33.647213", "-117.845234"},
             {"Jamba", "","33.648827", "-117.842069"},
             {"Langson Library", "","33.647189", "-117.841138"},
             {"Pheonix Food Court", "", "33.645576", "-117.840749"},
@@ -109,8 +110,10 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"University Club", "", "33.642927", "-117.842503"},
 
             //Humanities + Arts
+            {"ACT", "","33.650464", "-117.844992"}, //Art, Culture and Technology
             {"AITR", "", "33.649759", "-117.843953"}, //Arts Instruction and Technology Resource Center
-            {"Claire Trevor Theater", "","33.649303", "-117.845215"},
+            {"CTT", "","33.649303", "-117.845215"}, //Claire Trevor Theater
+            {"HG", "","33.648248", "-117.844432"}, //Humanities Gateway
             {"HH", "", "33.647317", "-117.844024"}, //Humanities Hall
             {"HIB", "", "33.648363", "-117.843919"}, //Humanities Instructional Building
             {"KH", "", "33.647742", "-117.843600"}, //Krieger Hall
@@ -123,7 +126,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"BC's Cavern Food Court", "","33.645911", "-117.844431"},
             {"BS3", "", "33.645677", "-117.845646"}, //Biological Sciences Lecture Hall III
             {"HSLH", "", "33.645613", "-117.844692"}, //Howard Schneiderman Lecture Hall
-            {"McGaugh Hall", "","33.645214", "-117.844811"},
+            {"MH", "","33.645214", "-117.844811"}, //McGaugh Hall
             {"NS1", "","33.644626", "-117.845432"}, //Natural Sciences I
             {"NS2", "","33.644299", "-117.845163"},
             {"Science Library", "", "33.645818", "-117.846846"},
@@ -144,6 +147,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"SST", "", "33.646500", "-117.840187"}, //Social Science Tower
             {"SSTR", "","33.647018", "-117.840288"}, //Social Science Trailer
             {"Starbucks (School of Business)", "","33.646968", "-117.838394"},
+            {"UCI Summer Session", "","33.646537", "-117.837317"},
 
 
             //Physical Sciences
@@ -157,6 +161,17 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"RH", "", "33.644513", "-117.844224"} //Rowland Hall
 
 
+            /*
+            Missing Places That I Might Need
+            - Hewitt Research Hall
+            - Art Studio
+             */
+
+            /*
+            Missing PLaces I Might NOT Need
+            - Beckman Laser Institute
+            
+             */
     };
     private double inputlong;
     private double inputlat;
