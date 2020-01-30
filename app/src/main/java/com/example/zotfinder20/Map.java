@@ -77,6 +77,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
 
             //Misc.
             {"Aldrich Hall", "","33.648432", "-117.841221"},
+            {"AIRB", "","33.642886", "-117.838220"}, //Anteater Instruction and Research Building
             {"ALP", "", "33.646974", "-117.844535"}, //ALP is between humanities and biologies
             {"Anthill Pub & Grille", "","33.648970", "-117.842303"},
             {"E-sports Arena", "","33.648868", "-117.842531"},
@@ -102,7 +103,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"ELF", "","33.643844", "-117.839686"}, //Engineering Laboratory Facility
             {"ELH", "", "33.644343", "-117.840686"}, //Engineering Lecture Hall
             {"ET", "", "33.644619", "-117.841349"},  //Engineering Tower
-            {"ICS", "", "33.644396", "-117.841602"}, //Main ICS Building
+            {"ICS", "", "33.644396", "-117.841602"}, //Information and Computer Science
             {"ICF", "","33.644407", "-117.840010"}, //Interim Classroom Facility
             {"Java City Kiosk", "", "33.643445", "-117.841162"},
             {"MDEA", "", "33.643830", "-117.840558"}, //McDonnel Douglas Engineering Auditorium
@@ -112,11 +113,15 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             //Humanities + Arts
             {"ACT", "","33.650464", "-117.844992"}, //Art, Culture and Technology
             {"AITR", "", "33.649759", "-117.843953"}, //Arts Instruction and Technology Resource Center
+            {"CAC", "","33.650033", "-117.845322"}, //Contemporary Arts Center
             {"CTT", "","33.649303", "-117.845215"}, //Claire Trevor Theater
             {"HG", "","33.648248", "-117.844432"}, //Humanities Gateway
             {"HH", "", "33.647317", "-117.844024"}, //Humanities Hall
             {"HIB", "", "33.648363", "-117.843919"}, //Humanities Instructional Building
+            {"HICF", "","33.646949", "-117.846847"}, //Humanities Interim Classroom Facility
+            {"IAB", "","33.648212", "-117.845517"}, //Intercollegiate Athletic Building
             {"KH", "", "33.647742", "-117.843600"}, //Krieger Hall
+            {"MM", "","33.649330", "-117.844507"}, //Music and Media Building
             {"Nixon Theater", "","33.650238", "-117.844491"},
             {"Sculpture & Ceramic Studios", "","33.650238", "-117.844491"},
             {"WSH", "", "33.649559", "-117.844387"}, //Winifred Smith Hall
@@ -169,8 +174,9 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
 
             /*
             Missing PLaces I Might NOT Need
-            - Beckman Laser Institute
-            
+            - Beckman Laser Institute (BLI)
+            - Bren Events Ceter
+
              */
     };
     private double inputlong;

@@ -57,6 +57,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/white"
+        android:visibility="gone"
         android:text="Enter the name of the building" />
 
     <Button
@@ -78,4 +79,17 @@
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="84dp"
         android:text="Submit" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="38dp"
+        android:text="Select a building" />
+
 </RelativeLayout>

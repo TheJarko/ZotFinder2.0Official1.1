@@ -38,4 +38,9 @@
         <item>SSPB</item>
         <item>SST</item>
     </string-array>
+
+    <string-array name="classroom_name_and_number">
+
+    </string-array>
+
 </resources>

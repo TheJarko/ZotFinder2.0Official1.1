@@ -42,7 +42,7 @@
         android:layout_marginEnd="13dp"
         android:gravity="center"
         android:textColor="@color/white"
-        android:text="Find a lecture hall or classroom here. Enter the following information:" />
+        android:text="Find a lecture hall or classroom here:" />
 
     <EditText
         android:id="@+id/editText"
@@ -57,6 +57,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/white"
+        android:visibility="gone"
         android:text="Enter the hall/room number" />
 
     <Button
@@ -86,8 +87,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="257dp"
-        android:layout_marginEnd="40dp"
-        android:text="Select a building" />
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="38dp"
+        android:text="Select a classroom" />
 </RelativeLayout>
