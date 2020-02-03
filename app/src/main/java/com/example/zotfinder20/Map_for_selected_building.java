@@ -1,6 +1,5 @@
 package com.example.zotfinder20;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.location.Location;
@@ -17,6 +16,7 @@ import com.mapbox.android.core.location.LocationEngineResult;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.api.directions.v5.DirectionsCriteria;
+import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.geometry.LatLngBounds;
 import com.mapbox.mapboxsdk.Mapbox;
@@ -56,7 +56,7 @@ import java.util.List;
 
 
 
-public class Map extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener {
+public class Map_for_selected_building extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener {
 
     private static final LatLng BOUND_CORNER_NW = new LatLng(33.651033, -117.849535);
     private static final LatLng BOUND_CORNER_SE = new LatLng(33.640910, -117.835027);
@@ -70,7 +70,8 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
     private Button button;
     private Button button_change;
 
-    private String buildingSelection = selected_classroom.getData();
+    private String buildingSelection = selected_building.getData();
+
     private String[][] location_database = {
             //blank for copy and paste purposes (delete later)
             {"", "","33.", "-117."},
@@ -165,6 +166,19 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
             {"PSCB", "", "33.643432", "-117.843537"}, //Physical Sciences Classroom Building
             {"RH", "", "33.644513", "-117.844224"} //Rowland Hall
 
+            /*
+            Missing Places that need confirmation on indoor or outdoor
+            - AIRB 1030
+            - BS 2130
+            - CAC G021
+
+             */
+
+            /*
+            Missing Places that are CONFIRMED indoor
+            - ALL ALP classrooms
+
+             */
 
             /*
             Missing Places That I Might Need
@@ -179,6 +193,15 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
 
              */
     };
+    private String[][] classroom_location_database = {
+            //Template for copy and paste purposes
+            {"", "","33.", "-117."},
+
+            //Engineering + ICS
+            {"DBH 1100", "","33.643531", "-117.842098"},
+
+    };
+
     private double inputlong;
     private double inputlat;
     
@@ -232,6 +255,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
                         PropertyFactory.fillColor(Color.parseColor("#8A8ACB"))
                 ));
 
+
                 for (int i = 0; i < location_database.length; i++) {
                     if (buildingSelection.equals(location_database[i][0]) || (buildingSelection.equals(location_database[i][0]) && buildingSelection.equals(location_database[i][1]))){
                         inputlat = Double.parseDouble(location_database[i][2]);
@@ -239,9 +263,23 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
                         break;
                     }
                 }
+
+                
                 Point destinationPoint = Point.fromLngLat(inputlong, inputlat);
                 Point originPoint = Point.fromLngLat(locationComponent.getLastKnownLocation().getLongitude(), locationComponent.getLastKnownLocation().getLatitude());
                 getRoute(originPoint, destinationPoint);
+
+                //Create the "marker" for the destination point
+                mapView.getMapAsync(new OnMapReadyCallback() {
+                    @Override
+                    public void onMapReady(@NonNull MapboxMap mapboxMap) {
+                        MarkerOptions destination_marker = new MarkerOptions();
+                        destination_marker.title("Destination");
+                        destination_marker.position(new LatLng(inputlat,inputlong));
+                        mapboxMap.addMarker(destination_marker);
+                    }
+                });
+
 
                 button_change = findViewById(R.id.changeMAP);
                 button_change.setOnClickListener(new View.OnClickListener() {
@@ -269,7 +307,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
                                 .shouldSimulateRoute(simulateRoute)
                                 .build();
                         // Call this method with Context from within an Activity
-                        NavigationLauncher.startNavigation(Map.this, options);
+                        NavigationLauncher.startNavigation(Map_for_selected_building.this, options);
 
 
                         //provide an if statement if a user has reached destination here?
@@ -395,9 +433,9 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
     private static class MapActivityLocationCallback
             implements LocationEngineCallback<LocationEngineResult> {
 
-        private final WeakReference<Map> activityWeakReference;
+        private final WeakReference<Map_for_selected_building> activityWeakReference;
 
-        MapActivityLocationCallback(Map activity) {
+        MapActivityLocationCallback(Map_for_selected_building activity) {
             this.activityWeakReference = new WeakReference<>(activity);
         }
 
@@ -408,7 +446,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
          */
         @Override
         public void onSuccess(LocationEngineResult result) {
-            Map activity = activityWeakReference.get();
+            Map_for_selected_building activity = activityWeakReference.get();
 
             if (activity != null) {
                 Location location = result.getLastLocation();
@@ -432,7 +470,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Permis
         @Override
         public void onFailure(@NonNull Exception exception) {
             Log.d("LocationChangeActivity", exception.getLocalizedMessage());
-            Map activity = activityWeakReference.get();
+            Map_for_selected_building activity = activityWeakReference.get();
             if (activity != null) {
                 Toast.makeText(activity, exception.getLocalizedMessage(),
                         Toast.LENGTH_SHORT).show();
