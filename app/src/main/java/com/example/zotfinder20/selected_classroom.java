@@ -15,6 +15,7 @@ public class selected_classroom extends AppCompatActivity implements View.OnClic
     private Button button_submit;
     private static String classroomChoice;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class selected_classroom extends AppCompatActivity implements View.OnClic
 
         //Drop down menu
         Spinner spinner = findViewById(R.id.spinner1);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.building_name,android.R.layout.simple_spinner_item); //CHANGE building_name TO THE OTHER ARRAY AT STRINGS.XML
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.classroom_name_and_number,android.R.layout.simple_spinner_item); //CHANGE building_name TO THE OTHER ARRAY AT STRINGS.XML
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
@@ -59,11 +60,13 @@ public class selected_classroom extends AppCompatActivity implements View.OnClic
                 finish();
                 break;
             case R.id.submit_button:
-                Intent intent_submit = new Intent(this,Map.class);
+                Intent intent_submit = new Intent(this, Map_for_selected_classroom.class);
                 startActivity(intent_submit);
                 finish();
                 break;
         }
 
     }
+
+
 }

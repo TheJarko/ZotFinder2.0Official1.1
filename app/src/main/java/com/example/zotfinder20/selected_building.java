@@ -10,10 +10,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 
-/*
-COMMENTS
-1) If app suddenly doesn't work, try changing variables here in particular, notably buildingChoice
-* */
 
 public class selected_building extends AppCompatActivity  implements View.OnClickListener, AdapterView.OnItemSelectedListener{
 
@@ -66,12 +62,13 @@ public class selected_building extends AppCompatActivity  implements View.OnClic
                 break;
 
             case R.id.submit_button_from_selected_building_page:
-                Intent intent_submit = new Intent(this,Map.class);
+                Intent intent_submit = new Intent(this, Map_for_selected_building.class);
                 startActivity(intent_submit);
                 finish();
                 break;
         }
     }
+
 
 
 }

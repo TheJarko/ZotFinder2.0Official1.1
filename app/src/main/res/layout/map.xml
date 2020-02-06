@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Map">
+    tools:context=".Map_for_selected_building">
 
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapView"
@@ -29,7 +29,17 @@
 
             mapbox:layout_constraintStart_toStartOf="parent"
             mapbox:layout_constraintTop_toTopOf="parent" />
+
+
+
     </com.mapbox.mapboxsdk.maps.MapView>
+
+    <Button
+        android:id="@+id/arrivedbutton"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="I have arrived" />
 
     <Button
         android:id="@+id/changeMAP"
@@ -37,6 +47,5 @@
         android:layout_height="wrap_content"
         android:text="@string/sat"
         android:layout_gravity="bottom|start" />
-
 
 </FrameLayout>

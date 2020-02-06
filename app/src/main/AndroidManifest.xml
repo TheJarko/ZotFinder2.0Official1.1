@@ -13,7 +13,10 @@
         <activity android:name=".selected_room" />
         <activity android:name=".selected_building" />
         <activity android:name=".selected_classroom" />
-        <activity android:name=".Map" />
+        <activity android:name=".Safety_Dialog" />
+        <activity android:name=".Arrival_Dialog" />
+        <activity android:name=".Map_for_selected_building" />
+        <activity android:name=".Map_for_selected_classroom" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
