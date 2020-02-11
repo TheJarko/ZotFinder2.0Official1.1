@@ -42,53 +42,49 @@
         android:layout_marginEnd="13dp"
         android:gravity="center"
         android:textColor="@color/white"
-        android:text="Find an outdoor lecture hall or classroom here. If you are unsure if your classroom is outdoors or indoors, refer to the Help section." />
+        android:text="Before we start the navigation, are you currently at the building of your desired search?" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="248dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="254dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:visibility="gone"
-        android:text="Enter the hall/room number" />
 
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/yes_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginBottom="83dp"
-        android:text="Back" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="159dp"
+        android:background="@color/navy2"
+        android:fontFamily="@font/actor"
+        android:textColor="@color/gold"
+        android:text="Yes" />
 
     <Button
-        android:id="@+id/submit_button"
+        android:id="@+id/no_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/yes_button"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="84dp"
-        android:text="Submit" />
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="158dp"
+        android:background="@color/navy2"
+        android:fontFamily="@font/actor"
+        android:textColor="@color/gold"
+        android:text="No" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="326dp"
+    <Button
+        android:id="@+id/unsure_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/no_button"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="354dp"
-        android:layout_marginEnd="38dp"
-        android:text="Select a classroom" />
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="154dp"
+        android:background="@color/navy2"
+        android:fontFamily="@font/actor"
+        android:textColor="@color/gold"
+        android:text="Unsure" />
+
+
 </RelativeLayout>

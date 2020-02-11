@@ -13,6 +13,8 @@
         <activity android:name=".selected_room" />
         <activity android:name=".selected_building" />
         <activity android:name=".selected_classroom" />
+        <activity android:name=".selected_classroom_2" />
+        <activity android:name=".selected_indoor_warning_message" />
         <activity android:name=".Safety_Dialog" />
         <activity android:name=".Arrival_Dialog" />
         <activity android:name=".Map_for_selected_building" />
