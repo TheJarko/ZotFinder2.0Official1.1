@@ -31,7 +31,7 @@ public class selected_indoor_warning_message extends AppCompatActivity implement
         switch (v.getId())
         {
             case R.id.yes_button:
-                Intent intent_selected_yes = new Intent(this, MainActivity.class);
+                Intent intent_selected_yes = new Intent(this, selected_classroom_2.class);
                 startActivity(intent_selected_yes);
                 finish();
                 break;

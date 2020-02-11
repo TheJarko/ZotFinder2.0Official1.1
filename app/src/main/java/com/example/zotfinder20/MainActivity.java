@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
                 break;
             case R.id.indoor_classroom_button:
-                Intent intent_selected_room = new Intent(this,selected_room.class);
+                Intent intent_selected_room = new Intent(this,selected_indoor_warning_message.class);
                 startActivity(intent_selected_room);
                 finish();
                 break;

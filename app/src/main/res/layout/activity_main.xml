@@ -137,12 +137,14 @@
 
     <Button
         android:id="@+id/help_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="189dp"
+        android:layout_height="58dp"
         android:layout_below="@+id/indoor_classroom_button"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="158dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/navy2"
         android:fontFamily="@font/actor"
         android:textColor="@color/gold"
