@@ -12,36 +12,153 @@
 
     <string-array name="building_name">
         <item>--Select a building--</item>
-        <item>BS3</item>
-        <item>EH</item>
-        <item>ELH</item>
-        <item>ICS</item>
-        <item>HH</item>
+        <item>ACT</item>
+        <item>Aldrich Hall</item>
+        <item>AIRB</item>
+        <item>AITR</item>
         <item>ALP</item>
-        <item>West Food Court</item>
-        <item>Java City Kiosk</item>
-        <item>ET</item>
+        <item>BS3</item>
+        <item>CAC</item>
         <item>Calit2</item>
+        <item>CRH</item>
+        <item>CTT</item>
         <item>DBH</item>
-        <item>Disability Services Center</item>
+        <item>ECT</item>
+        <item>EG</item>
+        <item>ELF</item>
+        <item>ELH</item>
+        <item>ET</item>
+        <item>E-sports Arena</item>
+        <item>FRH</item>
+        <item>Gateway Study Center</item>
+        <item>HG</item>
+        <item>HH</item>
+        <item>HIB</item>
+        <item>HICF</item>
+        <item>HSLH</item>
+        <item>IAB</item>
+        <item>ICS</item>
+        <item>ICF</item>
+        <item>KH</item>
+        <item>Langson Library</item>
         <item>MDEA</item>
-        <item>Rockwell Engineering Center</item>
-        <item>University Club</item>
-        <item>SSH</item>
-        <item>SSL</item>
-        <item>SSLH</item>
+        <item>MH</item>
+        <item>MM</item>
+        <item>MPAA</item>
+        <item>MSTB</item>
+        <item>NS1</item>
+        <item>NS2</item>
+        <item>PCB</item>
+        <item>PSLH</item>
+        <item>PSCB</item>
+        <item>REC</item>
+        <item>RH</item>
         <item>SB1</item>
         <item>SB2</item>
+        <item>Science Library</item>
         <item>SE</item>
         <item>SE2</item>
+        <item>SH</item>
+        <item>SSH</item>
+        <item>SSL</item>
         <item>SSPA</item>
         <item>SSPB</item>
         <item>SST</item>
+        <item>SSTR</item>
+        <item>WSH</item>
+
     </string-array>
 
-    <string-array name="classroom_name_and_number">
+    <string-array name="outdoor_classroom_name_and_number">
         <item>--Select a classroom--</item>
         <item>AIRB 1030</item>
+
+        <item>BS3 1200</item>
+        <item>BS3 2130</item>
+
+        <item>CAC G021</item>
+
+        <item>DBH 1100</item>
+        <item>DBH 1200</item>
+        <item>DBH 1300</item>
+        <item>DBH 1400</item>
+        <item>DBH 1420</item>
+        <item>DBH 1422</item>
+        <item>DBH 1600</item>
+
+        <item>EH 1200</item>
+
+        <item>ELH 100</item>
+        <item>ELH 110</item>
+
+        <item>HSLH 100A</item>
+
+        <item>HG 1800</item>
+        <item>HG 2310</item>
+        <item>HG 2320</item>
+
+        <item>HIB 100</item>
+        <item>HIB 110</item>
+
+        <item>HICF 100K</item>
+        <item>HICF 100L</item>
+        <item>HICF 100M</item>
+        <item>HICF 100N</item>
+        <item>HICF 100P</item>
+        <item>HICF 100Q</item>
+
+        <item>ICS 209</item>
+        <item>ICS 213</item>
+
+        <item>IAB 128</item>
+        <item>IAB 129</item>
+        <item>IAB 129</item>
+        <item>IAB 130</item>
+        <item>IAB 131</item>
+
+        <item>NS1 2144</item>
+        <item>NS1 3112</item>
+
+        <item>PCB 1100</item>
+        <item>PCB 1200</item>
+        <item>PCB 1300</item>
+
+        <item>PSCB 120</item>
+        <item>PSCB 140</item>
+        <item>PSCB 210</item>
+        <item>PSCB 220</item>
+        <item>PSCB 230</item>
+        <item>PSCB 240</item>
+
+        <item>SE2 1304</item>
+        <item>SE2 1306</item>
+
+        <item>SSH 100</item>
+
+        <item>SE2 1304</item>
+        <item>SE2 1306</item>
+
+        <item>SSL 206</item>
+        <item>SSL 228</item>
+        <item>SSL 248</item>
+        <item>SSL 270</item>
+
+        <item>SSLH 100</item>
+
+        <item>SSPA 1100</item>
+        <item>SSPA 1165</item>
+        <item>SSPA 1170</item>
+
+        <item>SST 220A</item>
+        <item>SST 220B</item>
+
+        <item>SSTR 100</item>
+        <item>SSTR 101</item>
+        <item>SSTR 102</item>
+        <item>SSTR 103</item>
+    </string-array>
+
+    <string-array name="indoor_classroom_name_and_number">
         <item>ALP 1100</item>
         <item>ALP 1120</item>
         <item>ALP 1300</item>
@@ -55,29 +172,14 @@
         <item>ALP 2800</item>
         <item>ALP 3600</item>
         <item>ALP 3610</item>
-        <item>BS3 1200</item>
-        <item>BS3 2130</item>
-        <item>CAC G021</item>
-        <item>DBH 1100</item>
-        <item>DBH 1200</item>
-        <item>DBH 1300</item>
-        <item>DBH 1400</item>
-        <item>DBH 1420</item>
-        <item>DBH 1422</item>
+
         <item>DBH 1423</item>
         <item>DBH 1425</item>
         <item>DBH 1429</item>
         <item>DBH 1431</item>
         <item>DBH 1433</item>
         <item>DBH 1500</item>
-        <item>DBH 1600</item>
-        <item>EH 1200</item>
-        <item>ELH 100</item>
-        <item>ELH 110</item>
-        <item>HSLH 100A</item>
-        <item>HG 1800</item>
-        <item>HG 2310</item>
-        <item>HG 2320</item>
+
         <item>HH 100</item>
         <item>HH 105</item>
         <item>HH 108</item>
@@ -99,26 +201,15 @@
         <item>HH 242</item>
         <item>HH 254</item>
         <item>HH 262</item>
-        <item>HIB 100</item>
-        <item>HIB 110</item>
-        <item>HICF 100K</item>
-        <item>HICF 100L</item>
-        <item>HICF 100M</item>
-        <item>HICF 100N</item>
-        <item>HICF 100P</item>
-        <item>HICF 100Q</item>
+
         <item>ICS 174</item>
         <item>ICS 180</item>
-        <item>ICS 209</item>
-        <item>ICS 213</item>
-        <item>ICS 174</item>
-        <item>IAB 128</item>
-        <item>IAB 129</item>
-        <item>IAB 129</item>
-        <item>IAB 130</item>
-        <item>IAB 131</item>>
+
+        <item>MM 116</item>
+
         <item>MPAA 320</item>
         <item>MPAA 330</item>
+
         <item>MSTB 114</item>
         <item>MSTB 118</item>
         <item>MSTB 120</item>
@@ -126,16 +217,7 @@
         <item>MSTB 124</item>
         <item>MSTB 210</item>
         <item>MSTB 226</item>
-        <item>MM 116</item>
-        <item>NS1 2144</item>
-        <item>NS1 3112</item>
-        <item>PCB 1100</item>
-        <item>PCB 1200</item>
-        <item>PCB 1300</item>
-        <item>PSCB 120</item>
-        <item>PSCB 140</item>
-        <item>PSCB 210</item>
-        <item>PSCB 220</item>
+
         <item>RH 101</item>
         <item>RH 104</item>
         <item>RH 108</item>
@@ -144,11 +226,9 @@
         <item>RH 188</item>
         <item>RH 190</item>
         <item>RH 192</item>
+
         <item>SE 101</item>
-        <item>SE2 1304</item>
-        <item>SE2 1306</item>
-        <item>SSH 100</item>
-        <item>SE2 1304</item>
+
         <item>SSL 105</item>
         <item>SSL 117</item>
         <item>SSL 119</item>
@@ -162,29 +242,17 @@
         <item>SSL 162</item>
         <item>SSL 168</item>
         <item>SSL 171</item>
-        <item>SSL 206</item>
-        <item>SSL 228</item>
-        <item>SSL 248</item>
-        <item>SSL 270</item>
         <item>SSL 290</item>
-        <item>SSLH 100</item>
-        <item>SSPA 1100</item>
-        <item>SSPA 1165</item>
-        <item>SSPA 1170</item>
+
         <item>SST 120</item>
         <item>SST 122</item>
-        <item>SST 220A</item>
-        <item>SST 220B</item>
         <item>SST 238</item>
         <item>SST 120</item>
-        <item>SSTR 100</item>
-        <item>SSTR 101</item>
-        <item>SSTR 102</item>
-        <item>SSTR 103</item>
+
         <item>SH 128</item>
         <item>SH 134</item>
         <item>SH 174</item>
-
     </string-array>
+
 
 </resources>

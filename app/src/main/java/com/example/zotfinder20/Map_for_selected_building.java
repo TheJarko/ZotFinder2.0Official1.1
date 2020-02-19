@@ -82,7 +82,7 @@ public class Map_for_selected_building extends AppCompatActivity implements OnMa
             {"Aldrich Hall", "","33.648432", "-117.841221"},
             {"AIRB", "","33.642886", "-117.838220"}, //Anteater Instruction and Research Building
             {"ALP", "", "33.646974", "-117.844535"}, //ALP is between humanities and biologies
-            {"Anthill Pub & Grille", "","33.648970", "-117.842303"},
+            {"Anthill Pub and Grille", "","33.648970", "-117.842303"},
             {"E-sports Arena", "","33.648868", "-117.842531"},
             {"Gateway Study Center", "","33.647492", "-117.841746"},
             {"Greenhouse", "","33.647213", "-117.845234"},

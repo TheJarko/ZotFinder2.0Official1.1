@@ -23,7 +23,7 @@ public class selected_classroom extends AppCompatActivity implements View.OnClic
 
         //Drop down menu
         Spinner spinner = findViewById(R.id.spinner1);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.classroom_name_and_number,android.R.layout.simple_spinner_item); //CHANGE building_name TO THE OTHER ARRAY AT STRINGS.XML
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.outdoor_classroom_name_and_number,android.R.layout.simple_spinner_item); //CHANGE building_name TO THE OTHER ARRAY AT STRINGS.XML
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);

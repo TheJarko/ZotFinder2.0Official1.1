@@ -24,7 +24,7 @@ public class selected_classroom_2 extends AppCompatActivity implements View.OnCl
 
         //Drop down menu
         Spinner spinner2 = findViewById(R.id.spinner2);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.classroom_name_and_number,android.R.layout.simple_spinner_item); //CHANGE building_name TO THE OTHER ARRAY AT STRINGS.XML
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.indoor_classroom_name_and_number,android.R.layout.simple_spinner_item); //CHANGE building_name TO THE OTHER ARRAY AT STRINGS.XML
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter);
         spinner2.setOnItemSelectedListener(this);
@@ -60,11 +60,14 @@ public class selected_classroom_2 extends AppCompatActivity implements View.OnCl
                 startActivity(intent_go_back_from_selected_classroom);
                 finish();
                 break;
+                /*
             case R.id.submit_button2:
                 Intent intent_submit = new Intent(this, selected_indoor_warning_message.class);
                 startActivity(intent_submit);
                 finish();
                 break;
+
+                 */
         }
 
     }
